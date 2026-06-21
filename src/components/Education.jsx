@@ -9,10 +9,10 @@ export default function Education() {
   return (
     <section className="section education" id="education" ref={ref}>
       <h2 className={`section-title animate-in ${isVisible ? 'visible' : ''}`}>
-        <span className="gradient-text">Educación</span>
+        <span className="gradient-text">Education</span>
       </h2>
       <p className={`section-subtitle animate-in ${isVisible ? 'visible' : ''}`}>
-        Mi formación académica y certificaciones
+        My academic background and certifications
       </p>
 
       <div className={`education-content animate-in ${isVisible ? 'visible' : ''}`}>
@@ -36,7 +36,7 @@ export default function Education() {
         <div className="certifications-section">
           <h3 className="certifications-title">
             <FiAward className="certifications-title-icon" />
-            Certificaciones
+            Certifications
           </h3>
 
           {certifications.map((cert, index) => (
@@ -55,7 +55,7 @@ export default function Education() {
           <div className="languages-section">
             <h3 className="languages-title">
               <FiGlobe className="languages-title-icon" />
-              Idiomas
+              Languages
             </h3>
             <div className="language-bars">
               {languages.map((lang) => (

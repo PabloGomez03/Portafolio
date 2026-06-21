@@ -15,7 +15,7 @@ export default function Contact() {
     },
     {
       icon: <FiPhone />,
-      label: 'Teléfono',
+      label: 'Phone',
       value: personalInfo.phone,
       href: `tel:${personalInfo.phone.replace(/\s/g, '')}`,
     },
@@ -36,17 +36,17 @@ export default function Contact() {
   return (
     <section className="section contact" id="contact" ref={ref}>
       <h2 className={`section-title animate-in ${isVisible ? 'visible' : ''}`}>
-        <span className="gradient-text">Contacto</span>
+        <span className="gradient-text">Contact</span>
       </h2>
       <p className={`section-subtitle animate-in ${isVisible ? 'visible' : ''}`}>
-        ¿Tienes un proyecto en mente? ¡Hablemos!
+        Have a project in mind? Let's talk!
       </p>
 
       <div className={`contact-wrapper contact-wrapper--centered animate-in ${isVisible ? 'visible' : ''}`}>
         <div className="contact-info">
           <p className="contact-text">
-            Estoy abierto a nuevas oportunidades y colaboraciones. No dudes en contactarme
-            a través de cualquiera de estos medios.
+            I'm open to new opportunities and collaborations. Feel free to reach out
+            through any of these channels.
           </p>
 
           <div className="contact-methods">
@@ -72,7 +72,7 @@ export default function Contact() {
       {/* Footer */}
       <footer className="footer">
         <p className="footer-text">
-          © 2026 <span className="gradient-text">{personalInfo.name}</span>. Todos los derechos reservados.
+          © 2026 <span className="gradient-text">{personalInfo.name}</span>. All rights reserved.
         </p>
         <div className="footer-links">
           <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="footer-link" aria-label="GitHub">

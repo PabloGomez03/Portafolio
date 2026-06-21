@@ -12,10 +12,10 @@ export default function Projects() {
   return (
     <section className="section projects" id="projects" ref={ref}>
       <h2 className={`section-title animate-in ${isVisible ? 'visible' : ''}`}>
-        <span className="gradient-text">Proyectos</span>
+        <span className="gradient-text">Projects</span>
       </h2>
       <p className={`section-subtitle animate-in ${isVisible ? 'visible' : ''}`}>
-        Una selección de mis trabajos más destacados
+        A selection of my most notable work
       </p>
 
       {/* Featured Projects */}
@@ -27,7 +27,7 @@ export default function Projects() {
           >
             <div className="project-featured-info">
               <span className="project-featured-badge">
-                <FiStar /> Destacado
+                <FiStar /> Featured
               </span>
               <h3 className="project-featured-title">{project.title}</h3>
               <p className="project-featured-subtitle">{project.subtitle}</p>

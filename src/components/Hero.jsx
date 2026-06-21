@@ -19,7 +19,7 @@ export default function Hero() {
       <div className="hero-grid"></div>
 
       <div className="hero-content">
-        <span className="hero-greeting">Hola, soy</span>
+        <span className="hero-greeting">Hi, I'm</span>
         <h1 className="hero-name">
           <span className="highlight">{personalInfo.name}</span>
         </h1>
@@ -27,11 +27,11 @@ export default function Hero() {
 
         <div className="hero-actions">
           <button className="hero-btn hero-btn-primary" onClick={() => scrollTo('projects')}>
-            Ver Proyectos
+            View Projects
             <FiArrowDown />
           </button>
           <button className="hero-btn hero-btn-secondary" onClick={() => scrollTo('contact')}>
-            Contacto
+            Contact
           </button>
         </div>
 

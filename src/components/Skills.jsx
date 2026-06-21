@@ -16,10 +16,10 @@ export default function Skills() {
   return (
     <section className="section skills" id="skills" ref={ref}>
       <h2 className={`section-title animate-in ${isVisible ? 'visible' : ''}`}>
-        <span className="gradient-text">Habilidades</span>
+        <span className="gradient-text">Skills</span>
       </h2>
       <p className={`section-subtitle animate-in ${isVisible ? 'visible' : ''}`}>
-        Tecnologías y conocimientos que manejo
+        Technologies and knowledge I work with
       </p>
 
       <div className="skills-grid stagger-children">

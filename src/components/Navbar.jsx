@@ -2,11 +2,11 @@ import { useState, useEffect } from 'react';
 import './Navbar.css';
 
 const navItems = [
-  { label: 'Sobre mí', target: 'about' },
-  { label: 'Habilidades', target: 'skills' },
-  { label: 'Proyectos', target: 'projects' },
-  { label: 'Educación', target: 'education' },
-  { label: 'Contacto', target: 'contact' },
+  { label: 'About', target: 'about' },
+  { label: 'Skills', target: 'skills' },
+  { label: 'Projects', target: 'projects' },
+  { label: 'Education', target: 'education' },
+  { label: 'Contact', target: 'contact' },
 ];
 
 export default function Navbar() {

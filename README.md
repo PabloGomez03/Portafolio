@@ -2,7 +2,7 @@
 
 # 🚀 Pablo Gómez Arroyo — Portfolio
 
-**Ingeniero Informático · Full-Stack Developer · Huelva, España**
+**Computer Engineer · Full-Stack Developer · Huelva, Spain**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/pablo-gómez-arroyo)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PabloGomez03)
@@ -10,36 +10,36 @@
 
 <br/>
 
-*Portfolio personal desarrollado con React + Vite, con un diseño moderno, animaciones fluidas y modo oscuro.*
+*Personal portfolio built with React + Vite, featuring a modern design, smooth animations, and dark mode.*
 
 </div>
 
 ---
 
-## ✨ Características
+## ✨ Features
 
-- 🎨 **Diseño moderno y premium** — Interfaz elegante con glassmorphism, gradientes y micro-animaciones
-- 🌙 **Modo oscuro** — Tema dark con paleta de colores cuidadosamente seleccionada
-- 📱 **Responsive** — Adaptado a todos los dispositivos (móvil, tablet, desktop)
-- ⚡ **Rendimiento** — Construido con Vite para tiempos de carga ultra rápidos
-- 🎭 **Animaciones** — Transiciones suaves y efectos de entrada al hacer scroll
-- 🔍 **SEO optimizado** — Meta tags, Open Graph y estructura semántica
+- 🎨 **Modern & premium design** — Elegant interface with glassmorphism, gradients, and micro-animations
+- 🌙 **Dark mode** — Dark theme with a carefully curated color palette
+- 📱 **Responsive** — Adapted to all devices (mobile, tablet, desktop)
+- ⚡ **Performance** — Built with Vite for ultra-fast load times
+- 🎭 **Animations** — Smooth transitions and scroll-triggered entrance effects
+- 🔍 **SEO optimized** — Meta tags, Open Graph, and semantic structure
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Categoría | Tecnologías |
-|-----------|------------|
+| Category | Technologies |
+|----------|-------------|
 | **Frontend** | React 19, JSX |
 | **Bundler** | Vite 8 |
-| **Estilos** | CSS3 (Vanilla) — Variables, Flexbox, Grid, Animaciones |
-| **Iconos** | React Icons |
+| **Styling** | CSS3 (Vanilla) — Variables, Flexbox, Grid, Animations |
+| **Icons** | React Icons |
 | **Linting** | ESLint |
 
 ---
 
-## 📂 Estructura del Proyecto
+## 📂 Project Structure
 
 ```
 Portafolio/
@@ -72,84 +72,84 @@ Portafolio/
 
 ---
 
-## 🚀 Instalación y Uso
+## 🚀 Getting Started
 
-### Prerrequisitos
+### Prerequisites
 
-- [Node.js](https://nodejs.org/) (v18 o superior)
-- npm (incluido con Node.js)
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- npm (included with Node.js)
 
-### Instalación
+### Installation
 
 ```bash
-# Clonar el repositorio
+# Clone the repository
 git clone https://github.com/PabloGomez03/portafolio.git
 
-# Entrar en el directorio
+# Navigate to the directory
 cd portafolio
 
-# Instalar dependencias
+# Install dependencies
 npm install
 ```
 
-### Desarrollo
+### Development
 
 ```bash
-# Iniciar servidor de desarrollo
+# Start the development server
 npm run dev
 ```
 
-El servidor se abrirá en `http://localhost:5173`
+The server will open at `http://localhost:5173`
 
-### Producción
+### Production
 
 ```bash
-# Generar build de producción
+# Build for production
 npm run build
 
-# Previsualizar build
+# Preview the build
 npm run preview
 ```
 
 ---
 
-## 📋 Secciones del Portfolio
+## 📋 Portfolio Sections
 
-| Sección | Descripción |
+| Section | Description |
 |---------|-------------|
-| **Hero** | Presentación con nombre, título profesional y enlaces de contacto |
-| **Sobre mí** | Biografía, información personal e idiomas |
-| **Educación** | Formación académica y certificaciones |
-| **Skills** | Lenguajes, frameworks, herramientas DevOps y conocimientos teóricos |
-| **Proyectos** | Proyectos destacados con tecnologías utilizadas |
-| **Contacto** | Formulario y datos de contacto |
+| **Hero** | Introduction with name, professional title, and contact links |
+| **About Me** | Bio, personal information, and languages |
+| **Education** | Academic background and certifications |
+| **Skills** | Programming languages, frameworks, DevOps tools, and theoretical knowledge |
+| **Projects** | Featured projects with technologies used |
+| **Contact** | Contact information and links |
 
 ---
 
-## 🌟 Proyectos Destacados
+## 🌟 Featured Projects
 
-### 👗 Dresstyle — Plataforma E-commerce
-> Plataforma web de moda con arquitectura de microservicios. Spring Boot + Vue.js + Docker.
+### 👗 Dresstyle — E-commerce Platform
+> Fashion web platform with microservices architecture. Spring Boot + Vue.js + Docker.
 
 ### 🤖 RAG — Retrieval-Augmented Generation
-> Sistema de preguntas y respuestas con recuperación de documentos y generación con modelos de lenguaje.
+> Question-answering system using document retrieval and generation with language models.
 
-### 🎭 Clasificación de Emociones
-> Sistema de ML para clasificar emociones a partir de audios usando Random Forest, Gradient Boosting y Redes Neuronales.
+### 🎭 Emotion Classification
+> ML system for classifying emotions from audio recordings using Random Forest, Gradient Boosting, and Neural Networks.
 
-### ⚙️ Motor de Integración EAI
-> Motor de integración empresarial en Java con multithreading y bot de Telegram.
+### ⚙️ EAI Integration Engine
+> Enterprise integration engine in Java with multithreading and Telegram bot.
 
 ---
 
-## 📄 Licencia
+## 📄 License
 
-Este proyecto es de uso personal. Siéntete libre de usarlo como inspiración para tu propio portfolio.
+This project is for personal use. Feel free to use it as inspiration for your own portfolio.
 
 ---
 
 <div align="center">
 
-Hecho con ❤️ por **Pablo Gómez Arroyo**
+Made with ❤️ by **Pablo Gómez Arroyo**
 
 </div>

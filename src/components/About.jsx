@@ -8,19 +8,19 @@ export default function About() {
   const [ref, isVisible] = useInView();
 
   const details = [
-    { icon: <FiMapPin />, label: 'Ubicación', value: personalInfo.location },
+    { icon: <FiMapPin />, label: 'Location', value: personalInfo.location },
     { icon: <FiMail />, label: 'Email', value: personalInfo.email },
-    { icon: <FiPhone />, label: 'Teléfono', value: personalInfo.phone },
+    { icon: <FiPhone />, label: 'Phone', value: personalInfo.phone },
     { icon: <FiGithub />, label: 'GitHub', value: 'PabloGomez03' },
   ];
 
   return (
     <section className="section about" id="about" ref={ref}>
       <h2 className={`section-title animate-in ${isVisible ? 'visible' : ''}`}>
-        <span className="gradient-text">Sobre Mí</span>
+        <span className="gradient-text">About Me</span>
       </h2>
       <p className={`section-subtitle animate-in ${isVisible ? 'visible' : ''}`}>
-        Conóceme un poco más
+        Get to know me a little better
       </p>
 
       <div className={`about-wrapper animate-in ${isVisible ? 'visible' : ''}`}>
