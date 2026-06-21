@@ -1,0 +1,40 @@
+.app {
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Background gradient effect */
+.app-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: var(--bg-primary);
+}
+
+.app-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 0%, rgba(var(--accent-cyan-rgb), 0.03) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 100%, rgba(var(--accent-purple-rgb), 0.03) 0%, transparent 50%);
+}
+
+/* Section separators */
+.section-divider {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-xl);
+}
+
+.section-divider-line {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.06),
+    rgba(var(--accent-cyan-rgb), 0.1),
+    rgba(255, 255, 255, 0.06),
+    transparent
+  );
+}

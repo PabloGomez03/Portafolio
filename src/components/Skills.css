@@ -1,0 +1,121 @@
+.skills {
+  position: relative;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-xl);
+}
+
+.skill-category {
+  padding: var(--space-xl);
+  border-radius: var(--radius-lg);
+  background: var(--bg-glass);
+  border: var(--glass-border);
+  backdrop-filter: var(--glass-backdrop);
+  transition: all var(--transition-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-category::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--gradient-neon);
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.skill-category:hover {
+  background: var(--bg-glass-hover);
+  border-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.skill-category:hover::before {
+  opacity: 1;
+}
+
+.skill-category-icon {
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--space-md);
+  color: var(--accent-cyan);
+}
+
+.skill-category-title {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  margin-bottom: var(--space-lg);
+  color: var(--text-primary);
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.skill-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  background: rgba(var(--accent-cyan-rgb), 0.08);
+  border: 1px solid rgba(var(--accent-cyan-rgb), 0.15);
+  color: var(--accent-cyan);
+  transition: all var(--transition-base);
+}
+
+.skill-tag:hover {
+  background: rgba(var(--accent-cyan-rgb), 0.15);
+  border-color: rgba(var(--accent-cyan-rgb), 0.4);
+  box-shadow: 0 0 12px rgba(var(--accent-cyan-rgb), 0.2);
+  transform: translateY(-2px);
+}
+
+/* Alternate accent color for frameworks */
+.skill-category:nth-child(2) .skill-tag {
+  background: rgba(var(--accent-purple-rgb), 0.08);
+  border-color: rgba(var(--accent-purple-rgb), 0.15);
+  color: var(--accent-purple);
+}
+
+.skill-category:nth-child(2) .skill-tag:hover {
+  background: rgba(var(--accent-purple-rgb), 0.15);
+  border-color: rgba(var(--accent-purple-rgb), 0.4);
+  box-shadow: 0 0 12px rgba(var(--accent-purple-rgb), 0.2);
+}
+
+.skill-category:nth-child(2) .skill-category-icon {
+  color: var(--accent-purple);
+}
+
+.skill-category:nth-child(4) .skill-tag {
+  background: rgba(var(--accent-purple-rgb), 0.08);
+  border-color: rgba(var(--accent-purple-rgb), 0.15);
+  color: var(--accent-purple);
+}
+
+.skill-category:nth-child(4) .skill-tag:hover {
+  background: rgba(var(--accent-purple-rgb), 0.15);
+  border-color: rgba(var(--accent-purple-rgb), 0.4);
+  box-shadow: 0 0 12px rgba(var(--accent-purple-rgb), 0.2);
+}
+
+.skill-category:nth-child(4) .skill-category-icon {
+  color: var(--accent-purple);
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,216 @@
+.education {
+  position: relative;
+}
+
+.education-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3xl);
+}
+
+/* Timeline */
+.education-timeline {
+  position: relative;
+}
+
+.education-timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--accent-cyan), var(--accent-purple), transparent);
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 56px;
+  padding-bottom: var(--space-2xl);
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 12px;
+  top: 4px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--bg-primary);
+  border: 3px solid var(--accent-cyan);
+  z-index: 1;
+  box-shadow: 0 0 12px rgba(var(--accent-cyan-rgb), 0.4);
+}
+
+.timeline-date {
+  font-size: var(--font-size-sm);
+  color: var(--accent-cyan);
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+
+.timeline-title {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  margin-bottom: var(--space-xs);
+}
+
+.timeline-institution {
+  font-size: var(--font-size-base);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-xs);
+}
+
+.timeline-location {
+  font-size: var(--font-size-sm);
+  color: var(--text-muted);
+  margin-bottom: var(--space-md);
+}
+
+.timeline-desc {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  line-height: 1.7;
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  background: var(--bg-glass);
+  border: var(--glass-border);
+}
+
+/* Certifications */
+.certifications-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.certifications-title {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--text-primary);
+}
+
+.certifications-title-icon {
+  color: var(--accent-purple);
+}
+
+.cert-card {
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  background: var(--bg-glass);
+  border: var(--glass-border);
+  backdrop-filter: var(--glass-backdrop);
+  transition: all var(--transition-base);
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.cert-card:hover {
+  transform: translateY(-3px);
+  background: var(--bg-glass-hover);
+  box-shadow: var(--shadow-md);
+}
+
+.cert-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-xl);
+  flex-shrink: 0;
+  background: rgba(var(--accent-purple-rgb), 0.1);
+  color: var(--accent-purple);
+  border: 1px solid rgba(var(--accent-purple-rgb), 0.2);
+}
+
+.cert-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.cert-name {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.cert-issuer {
+  font-size: var(--font-size-sm);
+  color: var(--text-muted);
+}
+
+/* Languages */
+.languages-section {
+  margin-top: var(--space-xl);
+}
+
+.languages-title {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  margin-bottom: var(--space-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.languages-title-icon {
+  color: var(--accent-cyan);
+}
+
+.language-bars {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.language-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.language-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.language-name {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+}
+
+.language-level {
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+}
+
+.language-bar {
+  height: 6px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+}
+
+.language-bar-fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  background: var(--gradient-neon);
+  transition: width 1s ease;
+}
+
+@media (max-width: 768px) {
+  .education-content {
+    grid-template-columns: 1fr;
+  }
+}
