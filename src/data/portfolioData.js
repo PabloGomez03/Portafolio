@@ -32,7 +32,7 @@ export const experience = [
     company: 'Bonanza Sistemas Digitales S.L',
     period: 'Jul. 2026 – Present',
     location: 'Huelva, Spain',
-    description: 'Soporte técnico, mantenimiento preventivo y correctivo de sistemas informáticos, administración de redes y soluciones digitales.',
+    description: 'Technical support, preventive and corrective maintenance of computer systems, network administration, and digital solutions.',
   },
 ];
 
