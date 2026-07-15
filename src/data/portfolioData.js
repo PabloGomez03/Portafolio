@@ -26,6 +26,16 @@ export const education = [
   },
 ];
 
+export const experience = [
+  {
+    role: 'IT Technician (Técnico Informático)',
+    company: 'Bonanza Sistemas Digitales S.L',
+    period: 'Jul. 2026 – Present',
+    location: 'Huelva, Spain',
+    description: 'Soporte técnico, mantenimiento preventivo y correctivo de sistemas informáticos, administración de redes y soluciones digitales.',
+  },
+];
+
 export const certifications = [
   {
     name: 'AZ-900: Microsoft Azure Fundamentals',

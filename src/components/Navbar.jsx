@@ -4,6 +4,7 @@ import './Navbar.css';
 const navItems = [
   { label: 'About', target: 'about' },
   { label: 'Skills', target: 'skills' },
+  { label: 'Experience', target: 'experience' },
   { label: 'Projects', target: 'projects' },
   { label: 'Education', target: 'education' },
   { label: 'Contact', target: 'contact' },
