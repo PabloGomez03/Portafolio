@@ -11,6 +11,13 @@ export const personalInfo = {
 
 export const education = [
   {
+    institution: 'Universidad Europea de Madrid',
+    degree: "Master's Degree in Cybersecurity",
+    period: 'Oct. 2026 – Oct. 2027',
+    location: 'Madrid, Spain',
+    description: 'Starting October 26, 2026 (1-year duration). Postgraduate specialization in cybersecurity, network defense, threat analysis, and secure systems architecture.',
+  },
+  {
     institution: 'University of Huelva',
     degree: "Bachelor's Degree in Computer Engineering",
     period: 'Sep. 2021 – Jun. 2026',
