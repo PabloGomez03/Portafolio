@@ -1,12 +1,13 @@
 export const personalInfo = {
   name: 'Pablo Gómez Arroyo',
-  title: 'Computer Engineer',
+  title: 'Security Engineer | Computer Engineer',
+  role: 'Security Engineer @ Midway Technologies',
   email: 'apolox.12@hotmail.com',
   phone: '+34 692 393 621',
   linkedin: 'https://linkedin.com/in/pablo-gómez-arroyo',
   github: 'https://github.com/PabloGomez03',
   location: 'Huelva, Spain',
-  bio: 'Computer Engineer passionate about software development, system architecture, and emerging technologies. Experience in full-stack development, microservices, enterprise integration, and artificial intelligence. Always looking for new technological challenges.',
+  bio: 'Security Engineer and Computer Engineer specializing in cyber defense, incident response (L1), and secure systems architecture. Currently working at Midway Technologies operating across the Microsoft Security stack (Sentinel, Defender for Endpoint & Office 365, KQL, and MITRE ATT&CK). Combining a solid computer engineering foundation in distributed systems and software development with specialized expertise in threat analysis and security operations.',
 };
 
 export const education = [
@@ -35,11 +36,56 @@ export const education = [
 
 export const experience = [
   {
+    role: 'Security Engineer (Ingeniero de Seguridad)',
+    company: 'Midway Technologies',
+    employmentType: 'Full-time · Remote',
+    period: 'Oct. 2026 – Present',
+    startDate: 'Oct. 5, 2026',
+    location: 'Europe · Remote',
+    description:
+      'Cyber defense operations and incident response (L1) focused on the Microsoft Security stack:',
+    responsibilities: [
+      {
+        label: 'Monitoring & Triage',
+        text: 'Incident detection and analysis in Microsoft Sentinel using KQL queries and event correlation mapped to the MITRE ATT&CK framework.',
+      },
+      {
+        label: 'Endpoint Response',
+        text: 'Anomaly investigation, IoC/IoA analysis, and host containment/isolation with Defender for Endpoint.',
+      },
+      {
+        label: 'Email Security',
+        text: 'Triage and mitigation of phishing campaigns, header analysis, and account remediation with Defender for Office 365.',
+      },
+      {
+        label: 'Lifecycle Management',
+        text: 'False positive discrimination, operational playbook execution, and qualified technical escalation to higher tiers (L2/DFIR).',
+      },
+    ],
+    technologies: [
+      'Microsoft Sentinel',
+      'Defender for Endpoint',
+      'Defender for Office 365',
+      'KQL',
+      'MITRE ATT&CK',
+      'Incident Response (L1)',
+      'DFIR',
+    ],
+  },
+  {
     role: 'IT Technician (Técnico Informático)',
     company: 'Bonanza Sistemas Digitales S.L',
-    period: 'Jul. 2026 – Present',
+    employmentType: 'Full-time',
+    period: 'Jul. 2026 – Oct. 2026',
     location: 'Huelva, Spain',
-    description: 'Technical support, preventive and corrective maintenance of computer systems, network administration, and digital solutions.',
+    description:
+      'Technical support, preventive and corrective maintenance of computer systems, network administration, and digital solutions.',
+    technologies: [
+      'IT Support',
+      'Network Administration',
+      'Systems Maintenance',
+      'Hardware Troubleshooting',
+    ],
   },
 ];
 
@@ -59,24 +105,38 @@ export const certifications = [
 ];
 
 export const skills = {
+  security: {
+    title: 'Cybersecurity & Defense',
+    items: [
+      'Microsoft Sentinel',
+      'Defender for Endpoint',
+      'Defender for Office 365',
+      'KQL (Kusto Query Language)',
+      'MITRE ATT&CK',
+      'Incident Response (L1)',
+      'Threat Analysis & Triage',
+      'IoCs / IoAs',
+      'Phishing Mitigation'
+    ],
+  },
   languages: {
     title: 'Languages',
-    items: ['Java', 'C++', 'C', 'SQL', 'JavaScript', 'Bash', 'Python'],
+    items: ['Java', 'Python', 'KQL', 'C++', 'C', 'SQL', 'JavaScript', 'Bash'],
   },
   frameworks: {
     title: 'Frameworks',
     items: ['Spring Boot', 'Vue.js', 'Bootstrap', 'Flask', 'JUnit', 'React'],
   },
   devops: {
-    title: 'Tools / DevOps',
-    items: ['Docker', 'Git', 'Jira', 'Linux', 'Apache Solr'],
+    title: 'Tools / DevOps & Cloud',
+    items: ['Docker', 'Git', 'Linux', 'Microsoft Azure', 'Jira', 'Apache Solr'],
   },
   theory: {
     title: 'Theory & Architecture',
     items: [
+      'System Design',
       'Algorithms',
       'Data Structures',
-      'System Design',
       'SOLID',
       'Design Patterns',
       'Hexagonal',
@@ -84,7 +144,6 @@ export const skills = {
       'Concurrent Systems',
       'EAI',
       'Agile Methodologies',
-      'SEO',
     ],
   },
 };

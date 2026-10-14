@@ -1,4 +1,4 @@
-import { FiMapPin, FiMail, FiPhone, FiGithub } from 'react-icons/fi';
+import { FiMapPin, FiMail, FiPhone, FiGithub, FiBriefcase, FiShield } from 'react-icons/fi';
 import { personalInfo } from '../data/portfolioData';
 import { useInView } from '../hooks/useInView';
 import profileImg from '../assets/profile.jpeg';
@@ -8,6 +8,8 @@ export default function About() {
   const [ref, isVisible] = useInView();
 
   const details = [
+    { icon: <FiBriefcase />, label: 'Current Role', value: 'Security Engineer' },
+    { icon: <FiShield />, label: 'Focus', value: 'Cyberdefense & Incident Response' },
     { icon: <FiMapPin />, label: 'Location', value: personalInfo.location },
     { icon: <FiMail />, label: 'Email', value: personalInfo.email },
     { icon: <FiPhone />, label: 'Phone', value: personalInfo.phone },

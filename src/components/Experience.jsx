@@ -1,3 +1,4 @@
+import { FiMapPin, FiCalendar } from 'react-icons/fi';
 import { experience } from '../data/portfolioData';
 import { useInView } from '../hooks/useInView';
 import './Experience.css';
@@ -16,16 +17,73 @@ export default function Experience() {
 
       <div className={`experience-content animate-in ${isVisible ? 'visible' : ''}`}>
         <div className="experience-timeline">
-          {experience.map((exp, index) => (
-            <div className="timeline-item" key={index}>
-              <div className="timeline-dot"></div>
-              <span className="timeline-date">{exp.period}</span>
-              <h3 className="timeline-title">{exp.role}</h3>
-              <span className="timeline-company">{exp.company}</span>
-              {exp.location && <p className="timeline-location">{exp.location}</p>}
-              {exp.description && <p className="timeline-desc">{exp.description}</p>}
-            </div>
-          ))}
+          {experience.map((exp, index) => {
+            const isCurrent = exp.period && exp.period.toLowerCase().includes('present');
+
+            return (
+              <div
+                className={`timeline-item ${isCurrent ? 'timeline-item-current' : ''}`}
+                key={index}
+              >
+                <div className="timeline-dot"></div>
+
+                <div className="timeline-meta">
+                  <span className="timeline-date">
+                    <FiCalendar className="timeline-meta-icon" />
+                    {exp.period}
+                  </span>
+                  {isCurrent && <span className="timeline-current-badge">Current Role</span>}
+                </div>
+
+                <h3 className="timeline-title">{exp.role}</h3>
+
+                <div className="timeline-company-bar">
+                  <span className="timeline-company">{exp.company}</span>
+                  {exp.employmentType && (
+                    <span className="timeline-type-badge">{exp.employmentType}</span>
+                  )}
+                  {exp.location && (
+                    <span className="timeline-location">
+                      <FiMapPin className="timeline-location-icon" />
+                      {exp.location}
+                    </span>
+                  )}
+                </div>
+
+                <div className="timeline-card">
+                  {exp.description && (
+                    <p className="timeline-intro">{exp.description}</p>
+                  )}
+
+                  {exp.responsibilities && exp.responsibilities.length > 0 && (
+                    <ul className="timeline-responsibilities">
+                      {exp.responsibilities.map((resp, i) => (
+                        <li key={i} className="timeline-resp-item">
+                          <span className="timeline-resp-bullet">▹</span>
+                          <div className="timeline-resp-content">
+                            {resp.label && (
+                              <strong className="timeline-resp-label">{resp.label}: </strong>
+                            )}
+                            <span className="timeline-resp-text">{resp.text}</span>
+                          </div>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+
+                  {exp.technologies && exp.technologies.length > 0 && (
+                    <div className="timeline-tech-tags">
+                      {exp.technologies.map((t) => (
+                        <span key={t} className="timeline-tech-tag">
+                          {t}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

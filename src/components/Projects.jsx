@@ -53,7 +53,7 @@ export default function Projects() {
       </div>
 
       {/* Other Projects Grid */}
-      <div className="projects-grid stagger-children">
+      <div className="projects-grid stagger-children">Se confirma
         {others.map((project, index) => (
           <div
             key={index}

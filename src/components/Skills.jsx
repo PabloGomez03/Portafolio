@@ -1,9 +1,10 @@
-import { FiCode, FiLayers, FiSettings, FiBookOpen } from 'react-icons/fi';
+import { FiCode, FiLayers, FiSettings, FiBookOpen, FiShield } from 'react-icons/fi';
 import { skills } from '../data/portfolioData';
 import { useInView } from '../hooks/useInView';
 import './Skills.css';
 
 const categoryIcons = {
+  security: <FiShield />,
   languages: <FiCode />,
   frameworks: <FiLayers />,
   devops: <FiSettings />,
